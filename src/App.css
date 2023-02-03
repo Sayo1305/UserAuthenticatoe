@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body{
   min-height: 100vh;
+  width: 100%;
+  background: url("https://th.bing.com/th/id/R.ae1f93d6690b9e82ecff946df36d18da?rik=lqz3YLj4BcGmxg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f11%2fCalm-HD-Wallpaper.jpg&ehk=nbsj8kmvO%2f9ckldCUSTD585IbD1ciQtoZs4XlKu4mGY%3d&risl=&pid=ImgRaw&r=0")
+}
+.SignIn{
+  color: #fff;
+  text-shadow: 0px 6px 2px #000;
+  width: 100%;
+  font-size: 3rem;
+  text-align: center;
+  padding: 10px;
+  font-weight: 700;
+}
+.SignBox{
+  width: 500px;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  height: auto;
+  margin: auto auto;
+  background-color: rgba(255, 255, 255, .15);  
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.UserBox , .PasswordBox , .SubmitBox{
+  outline: none;
+  width: 80%;
+  border-radius: 10px;
+  padding: 10px;
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, .15);
+  border: none;
+  text-align: center;
+  font-size:1rem;
+}
+
+.UserBox.Home{
+  color: #fff;
+  text-decoration: none;
+}
+
+.SubmitBox{
+  width: 30%;
+  background: rgb(24, 255, 24);
+  cursor: pointer;
+}
+
+.HomeBox{
+  margin: 0 auto;
+  width: 50%;
+  gap: 10px;
   display: flex;
   flex-direction: column;
+  height: auto;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, .15);
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
